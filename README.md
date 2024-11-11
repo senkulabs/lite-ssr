@@ -1,6 +1,6 @@
 # Lite SSR
 
-This repo is a report for SSR issue on Inertia + Svelte 5. The problem happens after user logged in.
+> This repo has been fullfil it's task. The issue has been solved: https://github.com/inertiajs/inertia/issues/2083.
 
 ## How to run?
 
@@ -34,11 +34,3 @@ npm run build
 ```
 
 - Run `php artisan serve` and `php artisan inertia:start-ssr` in separate tab terminal.
-
-## Summary
-
-I toggle on/off for Enabled JavaScript in my browser (I use Safari) to test SSR. It works on landing page, login page, and register page. But, it doesn't work after user logged in (Dashboard page). I get an error message.
-
-```sh
-Unhandled Promise Rejection: HierarchyRequestError: The operation would yield an incorrect node tree.
-```
