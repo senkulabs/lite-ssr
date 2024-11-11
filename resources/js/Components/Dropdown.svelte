@@ -21,9 +21,11 @@
 <svelte:window onkeydown={closeOnEscape}></svelte:window>
 
 <div class="relative">
-    <button onclick={() => open = !open}>
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
+    <!-- svelte-ignore a11y_no_static_element_interactions -->
+    <div onclick={() => open = !open}>
         {@render trigger()}
-    </button>
+    </div>
 
     <!-- Full Screen Dropdown Overlay -->
     {#if open}
